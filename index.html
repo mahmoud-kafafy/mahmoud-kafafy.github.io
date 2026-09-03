@@ -3,76 +3,560 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mahmoud Kafafy — Robotics & Automotive Software Engineer</title>
-<meta name="description" content="Mahmoud Kafafy — Robotics, automotive software, embedded systems and AI engineering portfolio.">
+<title>Mahmoud Kafafy — Mechatronics Engineer, Applied AI</title>
+<meta name="description" content="Mahmoud Kafafy — Mechatronics engineer working across embedded control, automotive software and applied AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07090d;--panel:#0d1118;--line:#1d2733;--text:#eef4f8;--muted:#93a3b1;--accent:#69e6ff;--accent2:#9d7cff;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% 5%,#10212b 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
-a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 28px}
-nav{position:fixed;z-index:20;top:18px;left:50%;transform:translateX(-50%);width:min(92%,900px);display:flex;justify-content:space-between;align-items:center;padding:11px 15px 11px 20px;background:#091018cc;border:1px solid #ffffff14;border-radius:999px;backdrop-filter:blur(16px);box-shadow:0 12px 40px #0008}
-.logo{font-weight:800;letter-spacing:.08em;font-size:13px}.links{display:flex;gap:20px;color:#aebbc5;font-size:13px}.links a:hover{color:white}
-.hero{min-height:100vh;display:grid;place-items:center;position:relative}.hero:before{content:"";position:absolute;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,#69e6ff12,transparent 65%);animation:pulse 6s ease-in-out infinite}
-@keyframes pulse{50%{transform:scale(1.12);opacity:.65}}.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;position:relative}
-.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.2em;font-weight:800}.hero h1{font-size:clamp(52px,8vw,105px);line-height:.9;margin:18px 0;letter-spacing:-.07em}.hero h1 span{color:#a9b6c1}.hero p{max-width:650px;color:var(--muted);font-size:19px}.buttons{display:flex;gap:12px;margin-top:28px}.btn{padding:12px 18px;border:1px solid #ffffff1c;border-radius:10px;background:#111923;transition:.25s}.btn.primary{background:var(--accent);color:#041016;border-color:var(--accent);font-weight:800}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px #0007}
-.orbit{height:430px;position:relative;display:grid;place-items:center}.core{width:150px;height:150px;border:1px solid #69e6ff66;border-radius:50%;display:grid;place-items:center;background:#0b151d;box-shadow:0 0 70px #69e6ff22}.core b{font-size:40px}.ring{position:absolute;border:1px solid #ffffff18;border-radius:50%;animation:spin 18s linear infinite}.r1{width:280px;height:280px}.r2{width:390px;height:390px;animation-direction:reverse;animation-duration:25s}.node{position:absolute;padding:7px 11px;background:#0c141c;border:1px solid #ffffff18;border-radius:8px;color:#c8d5dd;font-size:11px;box-shadow:0 8px 20px #0008}.n1{top:30px;right:5%}.n2{bottom:55px;right:0}.n3{top:50%;left:0}.n4{bottom:15px;left:15%}@keyframes spin{to{transform:rotate(360deg)}}
-section{padding:115px 0}.sectionHead{display:flex;justify-content:space-between;align-items:end;margin-bottom:40px}.kicker{font-size:11px;color:var(--accent);letter-spacing:.2em;font-weight:800}.sectionHead h2{font-size:46px;line-height:1;margin:8px 0;letter-spacing:-.04em}.sectionHead p{color:var(--muted);max-width:450px}
-.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{position:relative;min-height:310px;padding:28px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#0e151e,#090d13);overflow:hidden;transition:transform .25s,border .25s}.card:before{content:"";position:absolute;inset:-2px;background:radial-gradient(400px circle at var(--x,50%) var(--y,50%),#69e6ff14,transparent 45%);opacity:0;transition:.3s}.card:hover{transform:translateY(-7px);border-color:#69e6ff55}.card:hover:before{opacity:1}.num{color:#647583;font-size:12px}.card h3{font-size:28px;margin:35px 0 8px}.card p{color:var(--muted);max-width:520px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.tag{font-size:11px;padding:5px 8px;border:1px solid #ffffff16;border-radius:6px;color:#b9c8d2}.arrow{position:absolute;right:24px;bottom:23px;color:var(--accent);font-size:22px}
-.timeline{border-left:1px solid #25313c;margin-left:10px;padding-left:32px}.job{position:relative;padding:0 0 48px}.job:before{content:"";position:absolute;left:-39px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px #69e6ff}.job h3{margin:0;font-size:24px}.job .meta{color:var(--accent);font-size:13px}.job p{color:var(--muted);max-width:760px}
-.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:11px 14px;background:#0d141c;border:1px solid #ffffff12;border-radius:9px;color:#c8d5dd}
-.contact{border:1px solid #ffffff12;border-radius:24px;padding:50px;background:linear-gradient(135deg,#0e1821,#0a0d13);display:flex;justify-content:space-between;gap:30px;align-items:center}.contact h2{font-size:45px;margin:0}.muted{color:var(--muted)}footer{padding:35px 0 55px;color:#64717c;font-size:12px;border-top:1px solid #ffffff0b}
-.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
-@media(max-width:800px){.links{display:none}.heroGrid{grid-template-columns:1fr}.orbit{height:280px}.r2{width:260px;height:260px}.r1{width:200px;height:200px}.projects{grid-template-columns:1fr}.sectionHead{display:block}.contact{display:block}.hero h1{font-size:62px}}
+:root{
+  --navy:#0A2440; --navy2:#0F3057; --blueline:#4F8FD1;
+  --ink:#EAF0F6; --ink-dim:#9FB8CF;
+  --paper:#ECE6D6; --paper2:#E1D8C2;
+  --graphite:#26221B; --graphite-dim:#6B6252;
+  --accent:#E1552A; --rule:#C9BE9F;
+  --max:1180px; --sans:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--graphite);font:16px/1.6 var(--sans)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:var(--max);margin:auto;padding:0 32px}
+h1,h2,h3{font-family:var(--sans);font-weight:600;margin:0}
+.mono{font-family:var(--mono)}
+
+/* ---------- nav ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:40;background:#0A2440ee;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff17}
+.navrow{display:flex;justify-content:space-between;align-items:center;padding:14px 32px;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.03em}
+.brand .box{width:22px;height:22px;border:1px solid var(--blueline);display:grid;place-items:center;font-size:10px;color:var(--blueline)}
+.navlinks{display:flex;gap:26px;font-family:var(--mono);font-size:12.5px;color:var(--ink-dim);align-items:center}
+.navlinks a{position:relative;padding-bottom:3px}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--blueline);transition:width .25s}
+.navlinks a:hover::after,.navlinks a.active::after{width:100%}
+.navlinks a.active{color:var(--ink)}
+.navlinks .cv{border:1px solid var(--blueline);padding:6px 12px;color:var(--ink)}
+.navlinks .cv:hover{background:#ffffff10}
+@media(max-width:900px){.navlinks a:not(.cv){display:none}}
+
+/* ---------- blueprint bg ---------- */
+.blueprint{background:
+  repeating-linear-gradient(0deg,#ffffff08 0 1px,transparent 1px 42px),
+  repeating-linear-gradient(90deg,#ffffff08 0 1px,transparent 1px 42px),
+  radial-gradient(circle at 82% 12%,#4F8FD124,transparent 55%),
+  var(--navy); color:var(--ink);
+}
+
+/* ---------- hero ---------- */
+.hero{padding:150px 0 100px}
+.hero .kicker{font-family:var(--mono);font-size:13px;color:var(--blueline)}
+.hero h1{font-size:clamp(34px,4.6vw,54px);margin-top:14px;line-height:1.1}
+.hero .typerow{font-size:clamp(34px,4.6vw,54px);line-height:1.1;display:flex;gap:12px;flex-wrap:wrap}
+#typed{color:var(--accent)}
+.caret{display:inline-block;width:3px;background:var(--accent);animation:blink 1s step-start infinite;margin-left:2px}
+@keyframes blink{50%{opacity:0}}
+.hero p.lead{color:var(--ink-dim);max-width:520px;margin-top:22px;font-size:17px}
+.buttons{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:13px;padding:12px 20px;border:1px solid var(--blueline);border-radius:2px;transition:.2s;display:inline-block;position:relative;overflow:hidden}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#1a0d06;font-weight:500}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary:hover{box-shadow:0 8px 22px #e1552a44}
+.btn:not(.primary):hover{background:#ffffff10}
+
+/* ---------- section shell ---------- */
+section{padding:96px 0}
+.head{margin-bottom:44px}
+.head .tag{font-family:var(--mono);font-size:12px;color:var(--blueline)}
+section:not(.blueprint) .head .tag{color:var(--accent)}
+.head h2{font-size:36px;margin-top:10px;letter-spacing:-.01em;max-width:520px}
+.head p{color:var(--graphite-dim);max-width:480px;margin-top:10px}
+.blueprint .head p{color:var(--ink-dim)}
+
+/* ---------- explore cards (education / internships) ---------- */
+.explore-list{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+.explore-item{border-bottom:1px solid var(--rule)}
+.explore-head{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;cursor:pointer}
+.explore-head:hover .exp-title{color:var(--accent)}
+.exp-left{display:flex;flex-direction:column;gap:4px}
+.exp-period{font-family:var(--mono);font-size:12px;color:var(--accent)}
+.exp-title{font-size:20px;font-weight:600;transition:color .2s}
+.exp-org{color:var(--graphite-dim);font-size:14px}
+.exp-btn{font-family:var(--mono);font-size:11.5px;border:1px solid var(--rule);padding:8px 14px;background:none;color:var(--graphite);flex-shrink:0;transition:.2s;display:flex;align-items:center;gap:6px}
+.exp-btn:hover{border-color:var(--accent);color:var(--accent)}
+.exp-btn .chev{transition:transform .3s}
+.explore-item.open .exp-btn .chev{transform:rotate(180deg)}
+.exp-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.exp-body-inner{padding:0 0 26px;color:var(--graphite-dim);font-size:14.5px;max-width:640px}
+.exp-body-inner ul{margin:0;padding-left:18px}
+.exp-body-inner li{margin-bottom:6px}
+
+/* dark-mode explore variant used inside .blueprint sections */
+.blueprint .explore-list{border-top-color:#ffffff2a}
+.blueprint .explore-item{border-bottom-color:#ffffff2a}
+.blueprint .exp-org{color:var(--ink-dim)}
+.blueprint .exp-btn{border-color:#ffffff2a;color:var(--ink)}
+.blueprint .exp-body-inner{color:var(--ink-dim)}
+
+/* ---------- featured experience block ---------- */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-bottom:60px}
+.feature .diagram{border:1px solid #ffffff2a;padding:28px;background:#ffffff06}
+.feature h3{font-size:26px;margin-bottom:6px}
+.feature .period{font-family:var(--mono);color:var(--blueline);font-size:12.5px;margin-bottom:14px}
+.feature p{color:var(--ink-dim);font-size:15px}
+.stacklist{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.stacklist span{font-family:var(--mono);font-size:11px;border:1px solid #ffffff2a;padding:5px 9px;color:#c6d7e6}
+@media(max-width:800px){.feature{grid-template-columns:1fr}}
+
+/* ---------- carousel ---------- */
+.carousel-wrap{position:relative}
+.carousel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:none}
+.carousel::-webkit-scrollbar{display:none}
+.pcard{scroll-snap-align:start;flex:0 0 320px;border:1px solid #ffffff26;background:#ffffff06;padding:24px;display:flex;flex-direction:column}
+.pcard .sht{font-family:var(--mono);font-size:11px;color:var(--blueline);display:flex;justify-content:space-between}
+.pcard h3{font-size:19px;margin:14px 0 8px;color:var(--ink)}
+.pcard p{color:var(--ink-dim);font-size:14px;margin:0}
+.pcard .more{color:var(--ink-dim);font-size:14px;margin:0;max-height:0;overflow:hidden;transition:max-height .35s ease}
+.pcard.open .more{max-height:200px;margin-top:8px}
+.pcard .readmore{font-family:var(--mono);font-size:11.5px;color:var(--blueline);background:none;border:none;padding:14px 0 0;text-align:left}
+.pcard .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tag{font-family:var(--mono);font-size:10.5px;padding:4px 8px;border:1px solid #ffffff2a;color:#c6d7e6}
+.pcard a.gh{margin-top:14px;font-family:var(--mono);font-size:11.5px;color:var(--accent)}
+.carousel-nav{display:flex;gap:10px;margin-top:22px}
+.cnav-btn{width:40px;height:40px;border:1px solid var(--blueline);background:none;color:var(--ink);display:grid;place-items:center;transition:.2s}
+.cnav-btn:hover{background:#ffffff10}
+.cnav-btn:disabled{opacity:.3;cursor:default}
+
+/* ---------- skills icon grid ---------- */
+.skillgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.skillcell{background:var(--paper);padding:26px 22px;display:flex;gap:16px;align-items:flex-start}
+.skillcell .icon{width:38px;height:38px;flex-shrink:0;color:var(--accent)}
+.skillcell .icon svg{width:100%;height:100%}
+.skillcell h3{font-size:15px;margin-bottom:6px}
+.skillcell p{font-size:13px;color:var(--graphite-dim);margin:0;font-family:var(--mono);line-height:1.5}
+
+/* ---------- contact ---------- */
+.stamp{border:1px solid #ffffff33;padding:48px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.stamp h2{font-size:34px;color:var(--ink);max-width:440px}
+.stamp p{color:var(--ink-dim);margin-top:12px}
+.social{display:flex;gap:14px;margin-top:22px}
+.social a{width:40px;height:40px;border:1px solid #ffffff33;display:grid;place-items:center;transition:.2s;color:var(--ink)}
+.social a:hover{border-color:var(--blueline);background:#ffffff10}
+.social svg{width:18px;height:18px}
+.contactlist{font-family:var(--mono);font-size:14px;display:flex;flex-direction:column;gap:12px}
+.contactlist a:hover{color:var(--blueline)}
+.contactlist .l{color:var(--blueline);font-size:11px;display:block;margin-bottom:2px}
+@media(max-width:760px){.stamp{grid-template-columns:1fr}}
+
+footer{padding:28px 0;color:var(--ink-dim);font-family:var(--mono);font-size:11.5px;border-top:1px solid #ffffff17}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.16,.8,.3,1),transform .7s cubic-bezier(.16,.8,.3,1)}
+.reveal.show{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{transition:none!important;opacity:1!important;transform:none!important}
+  .caret{animation:none}
+}
 </style>
 </head>
 <body>
-<nav><div class="logo">MK / ENGINEERING</div><div class="links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Stack</a><a href="#contact">Contact</a></div></nav>
 
-<header class="hero">
-<div class="wrap heroGrid">
-<div class="reveal">
-<div class="eyebrow">ROBOTICS · AUTOMOTIVE · EMBEDDED · AI</div>
-<h1>Mahmoud<br><span>Kafafy.</span></h1>
-<p>I build intelligent systems where robotics, automotive software, embedded control and AI meet.</p>
-<div class="buttons"><a class="btn primary" href="#work">Explore my work ↓</a><a class="btn" href="https://github.com/mahmoud-kafafy" target="_blank">GitHub ↗</a></div>
-</div>
-<div class="orbit reveal">
-<div class="ring r2"></div><div class="ring r1"></div><div class="core"><b>MK</b></div>
-<div class="node n1">AUTOSAR</div><div class="node n2">SLAM / LiDAR</div><div class="node n3">STM32</div><div class="node n4">AI / CV</div>
-</div>
+<nav><div class="navrow">
+  <div class="brand"><span class="box">MK</span> MAHMOUD KAFAFY</div>
+  <div class="navlinks">
+    <a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    <a class="cv" href="mailto:Mahmoudkafafy74@gmail.com">Get in touch</a>
+  </div>
+</div></nav>
+
+<header class="hero blueprint">
+<div class="wrap">
+  <div class="kicker">Hi, I'm Mahmoud —</div>
+  <div class="hero typerow">I am a&nbsp;<span id="typed"></span><span class="caret">&nbsp;</span></div>
+  <p class="lead">A mechatronics engineer building the link between physical systems and intelligent software — from PID motor control and sensor fusion to Adaptive AUTOSAR architectures and applied AI. Currently studying Applied AI in Digital Production Management in Cham, Germany.</p>
+  <div class="buttons">
+    <a class="btn primary" href="https://www.linkedin.com/in/mahmoud-kafafy-9b5a4b196/" target="_blank">Connect with me</a>
+    <a class="btn" href="https://github.com/mahmoud-kafafy" target="_blank">GitHub</a>
+    <a class="btn" href="mailto:Mahmoudkafafy74@gmail.com">Email me</a>
+  </div>
 </div>
 </header>
 
 <main>
-<section id="work"><div class="wrap"><div class="sectionHead reveal"><div><div class="kicker">01 / SELECTED WORK</div><h2>Systems I've built.</h2></div><p>Engineering projects spanning autonomous robots, automotive architecture, embedded systems, computer vision and machine learning.</p></div>
-<div class="projects">
-<a class="card reveal" href="https://github.com/mahmoud-kafafy" target="_blank"><div class="num">01 — FLAGSHIP</div><h3>CARLOS</h3><p>Autonomous construction layout robot extended with a Digital Twin and MQTT-based real-time communication.</p><div class="tags"><span class="tag">ROS</span><span class="tag">C++</span><span class="tag">SLAM</span><span class="tag">STM32</span><span class="tag">MQTT</span></div><div class="arrow">↗</div></a>
-<a class="card reveal" href="https://github.com/mahmoud-kafafy" target="_blank"><div class="num">02 — AUTOMOTIVE</div><h3>ROS → Adaptive AUTOSAR</h3><p>Automotive-oriented ADAS architecture using Execution Management, State Management and Communication Management.</p><div class="tags"><span class="tag">Adaptive AUTOSAR</span><span class="tag">C++</span><span class="tag">ADAS</span><span class="tag">SOME/IP</span></div><div class="arrow">↗</div></a>
-<a class="card reveal" href="https://github.com/mahmoud-kafafy/Egyptian-National-ID-Information-Extraction-YOLO-Model-Evaluation-and-OCR" target="_blank"><div class="num">03 — COMPUTER VISION</div><h3>YOLO + OCR</h3><p>Computer vision pipeline for detecting ID-card fields and extracting text with Arabic OCR.</p><div class="tags"><span class="tag">YOLO</span><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">OCR</span></div><div class="arrow">↗</div></a>
-<a class="card reveal" href="https://github.com/mahmoud-kafafy/Predictive-Maintenance-Using-Real-World-Sensor-Data-with-Multiple-Machine-Learning-Models" target="_blank"><div class="num">04 — MACHINE LEARNING</div><h3>Predictive Maintenance</h3><p>Industrial sensor-data pipeline comparing multiple ML models for machine-failure prediction.</p><div class="tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Random Forest</span><span class="tag">PCA</span></div><div class="arrow">↗</div></a>
-<a class="card reveal" href="https://github.com/mahmoud-kafafy" target="_blank"><div class="num">05 — EMBEDDED</div><h3>Door Locker Security</h3><p>Dual-MCU embedded security system with keypad, LCD, EEPROM, UART, I²C, motor and alarm control.</p><div class="tags"><span class="tag">Embedded C</span><span class="tag">ATmega32</span><span class="tag">UART</span><span class="tag">I²C</span></div><div class="arrow">↗</div></a>
-<a class="card reveal" href="https://github.com/mahmoud-kafafy" target="_blank"><div class="num">06 — CONTROL</div><h3>Furuta Pendulum</h3><p>Rotary inverted pendulum stabilization using state-space modeling, LQR and real-time feedback.</p><div class="tags"><span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">LQR</span><span class="tag">Arduino</span></div><div class="arrow">↗</div></a>
-</div></div></section>
 
-<section id="experience"><div class="wrap"><div class="sectionHead reveal"><div><div class="kicker">02 / EXPERIENCE</div><h2>Where I've worked.</h2></div></div>
-<div class="timeline">
-<div class="job reveal"><div class="meta">12.2024 — 05.2025 · SYNOPSYS</div><h3>Adaptive AUTOSAR Engineer · Part-time</h3><p>Developed Adaptive AUTOSAR solutions including software components, Execution Management and state management on Linux, with service-oriented communication using CommonAPI, SOME/IP and Franca IDL.</p></div>
-<div class="job reveal"><div class="meta">07.2024 — 10.2024 · SYNOPSYS</div><h3>Digital Twin Engineer Intern</h3><p>Developed simulation environments for autonomous robot testing, including motor and driver modeling, and validated simulated real-world behavior.</p></div>
-<div class="job reveal"><div class="meta">09.2025 — 04.2026 · COVENTRY UNIVERSITY</div><h3>Assistant Lecturer</h3><p>Delivered tutorials and labs, guided student projects and contributed to curriculum development.</p></div>
-</div></div></section>
+<section id="education" class="blueprint" style="padding-top:70px">
+<div class="wrap">
+  <div class="head reveal"><div class="tag">Education</div><h2>Where I studied.</h2></div>
+  <div class="explore-list">
 
-<section id="skills"><div class="wrap"><div class="sectionHead reveal"><div><div class="kicker">03 / TECHNICAL STACK</div><h2>Tools I work with.</h2></div></div>
-<div class="skills reveal">
-<span class="skill">C++ / Modern C++</span><span class="skill">Python</span><span class="skill">Embedded C</span><span class="skill">ROS</span><span class="skill">Adaptive AUTOSAR</span><span class="skill">STM32</span><span class="skill">ATmega32</span><span class="skill">MATLAB</span><span class="skill">Simulink</span><span class="skill">SLAM</span><span class="skill">LiDAR</span><span class="skill">YOLO</span><span class="skill">Computer Vision</span><span class="skill">Machine Learning</span><span class="skill">MQTT</span><span class="skill">Linux</span><span class="skill">Git</span>
-</div></div></section>
+    <div class="explore-item reveal">
+      <div class="explore-head" data-toggle>
+        <div class="exp-left">
+          <span class="exp-period">03.2026 — Present</span>
+          <span class="exp-title">Deggendorf Institute of Technology</span>
+          <span class="exp-org">M.Eng. Applied AI in Digital Production Management — Cham, Germany</span>
+        </div>
+        <button class="exp-btn">Explore <span class="chev">▾</span></button>
+      </div>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <p>A master's program bridging applied artificial intelligence with industrial production systems — where I'm building on my embedded and automotive background with deeper machine learning, data-driven automation and digital-production coursework.</p>
+        </div>
+      </div>
+    </div>
 
-<section><div class="wrap"><div class="contact reveal" id="contact"><div><div class="kicker">04 / CONTACT</div><h2>Let's build something<br>intelligent.</h2><p class="muted">Open to robotics, automotive software, embedded and AI opportunities.</p></div><div class="buttons"><a class="btn primary" href="mailto:Mahmoudkafafy74@gmail.com">Email me ↗</a><a class="btn" href="https://www.linkedin.com/in/mahmoud-kafafy-9b5a4b196/" target="_blank">LinkedIn ↗</a></div></div></div></section>
+    <div class="explore-item reveal">
+      <div class="explore-head" data-toggle>
+        <div class="exp-left">
+          <span class="exp-period">10.2019 — 07.2024</span>
+          <span class="exp-title">Ain Shams University</span>
+          <span class="exp-org">B.Sc. Mechatronics Engineering — Cairo, Egypt</span>
+        </div>
+        <button class="exp-btn">Explore <span class="chev">▾</span></button>
+      </div>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <ul>
+            <li>Graduated with a GPA of 3.51, ranked 5th in the Mechatronics batch of 2024.</li>
+            <li>Graduation project: a self-driving mobile robot for printing and traceability — STM32-based PID motor control, UART link to an NVIDIA Jetson TX2, and Extended Kalman Filter sensor fusion with Velodyne VLP-16 LiDAR.</li>
+            <li>Member of the Embedded Systems / Low Voltage team, 2022–2024.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="wrap">
+  <div class="head reveal"><div class="tag">Experience</div><h2>Where I've worked.</h2></div>
+</div>
+</section>
+
+<section class="blueprint" style="padding-top:0;padding-bottom:70px">
+<div class="wrap">
+  <div class="feature reveal">
+    <div>
+      <div class="period">12.2024 — 05.2025 · Part-time</div>
+      <h3>Synopsys — Adaptive AUTOSAR Engineer</h3>
+      <p>Designed and implemented Adaptive AUTOSAR solutions on Linux, including software components, Execution Management (process lifecycle) and State Management clusters. Built service-oriented communication using CommonAPI, SOME/IP and SOME/IP-SD, and Franca IDL interfaces, with a strong focus on scalable system integration. Along the way I picked up Cortex-M4 architecture, RTOS and OSEK OS fundamentals, the UART/SPI/I2C/CAN/LIN protocol stack, and Agile testing practices for real-time automotive systems.</p>
+      <div class="stacklist"><span>Adaptive AUTOSAR</span><span>SOME/IP</span><span>CommonAPI</span><span>Franca IDL</span><span>Cortex-M4</span><span>OSEK OS</span></div>
+    </div>
+    <div class="diagram">
+      <svg viewBox="0 0 380 260" fill="none">
+        <rect x="20" y="20" width="150" height="50" rx="2" stroke="#4F8FD1" stroke-width="1.2"/>
+        <text x="95" y="41" fill="#EAF0F6" font-family="IBM Plex Mono" font-size="11" text-anchor="middle">EXEC MGMT</text>
+        <text x="95" y="57" fill="#9FB8CF" font-family="IBM Plex Mono" font-size="8.5" text-anchor="middle">PROCESS LIFECYCLE</text>
+        <rect x="210" y="20" width="150" height="50" rx="2" stroke="#4F8FD1" stroke-width="1.2"/>
+        <text x="285" y="41" fill="#EAF0F6" font-family="IBM Plex Mono" font-size="11" text-anchor="middle">STATE MGMT</text>
+        <text x="285" y="57" fill="#9FB8CF" font-family="IBM Plex Mono" font-size="8.5" text-anchor="middle">FUNCTION GROUPS</text>
+        <rect x="115" y="115" width="150" height="50" rx="2" stroke="#E1552A" stroke-width="1.2"/>
+        <text x="190" y="136" fill="#EAF0F6" font-family="IBM Plex Mono" font-size="11" text-anchor="middle">COMM MGMT</text>
+        <text x="190" y="152" fill="#9FB8CF" font-family="IBM Plex Mono" font-size="8.5" text-anchor="middle">SOME/IP · FRANCA IDL</text>
+        <rect x="115" y="200" width="150" height="44" rx="2" stroke="#4F8FD1" stroke-width="1.2"/>
+        <text x="190" y="220" fill="#EAF0F6" font-family="IBM Plex Mono" font-size="11" text-anchor="middle">ECU / LINUX</text>
+        <text x="190" y="235" fill="#9FB8CF" font-family="IBM Plex Mono" font-size="8.5" text-anchor="middle">TARGET RUNTIME</text>
+        <path d="M95 70 V115" stroke="#4F8FD1" stroke-width="1"/>
+        <path d="M285 70 V115" stroke="#4F8FD1" stroke-width="1"/>
+        <path d="M190 165 V200" stroke="#E1552A" stroke-width="1"/>
+        <circle r="3" fill="#4F8FD1"><animateMotion dur="2.6s" repeatCount="indefinite" path="M95 70 V115"/></circle>
+        <circle r="3" fill="#4F8FD1"><animateMotion dur="2.6s" begin="1.3s" repeatCount="indefinite" path="M285 70 V115"/></circle>
+        <circle r="3" fill="#E1552A"><animateMotion dur="2.2s" begin=".6s" repeatCount="indefinite" path="M190 165 V200"/></circle>
+      </svg>
+    </div>
+  </div>
+
+  <div class="explore-list reveal">
+
+    <div class="explore-item">
+      <div class="explore-head" data-toggle>
+        <div class="exp-left">
+          <span class="exp-period">09.2025 — 04.2026</span>
+          <span class="exp-title">Assistant Lecturer</span>
+          <span class="exp-org">Coventry University, Cairo</span>
+        </div>
+        <button class="exp-btn">Explore <span class="chev">▾</span></button>
+      </div>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <p>Delivered tutorials and labs, guided student projects, and contributed to curriculum development.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="explore-item">
+      <div class="explore-head" data-toggle>
+        <div class="exp-left">
+          <span class="exp-period">07.2024 — 10.2024</span>
+          <span class="exp-title">Digital Twin Engineer Intern</span>
+          <span class="exp-org">Synopsys, Cairo</span>
+        </div>
+        <button class="exp-btn">Explore <span class="chev">▾</span></button>
+      </div>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <p>Built a simulation environment for autonomous robot testing, including motor and driver modeling, and validated simulated behavior against real-world performance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="explore-item">
+      <div class="explore-head" data-toggle>
+        <div class="exp-left">
+          <span class="exp-period">08.2022 — 07.2024</span>
+          <span class="exp-title">Embedded Systems Team Member</span>
+          <span class="exp-org">Ain Shams University · Low Voltage Team</span>
+        </div>
+        <button class="exp-btn">Explore <span class="chev">▾</span></button>
+      </div>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <p>Contributed to embedded systems development within the university's low-voltage subsystem team.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="explore-item">
+      <div class="explore-head" data-toggle>
+        <div class="exp-left">
+          <span class="exp-period">06.2022 — 09.2022</span>
+          <span class="exp-title">Research & Development Intern</span>
+          <span class="exp-org">Falcon Electronic & Electrical Industry</span>
+        </div>
+        <button class="exp-btn">Explore <span class="chev">▾</span></button>
+      </div>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <p>Supported research and development on electrical and electronic product development.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<section id="work">
+<div class="wrap">
+  <div class="head reveal"><div class="tag">Projects</div><h2>Things I've built.</h2><p>Swipe or use the arrows — click a card to read more.</p></div>
+</div>
+</section>
+
+<section class="blueprint" style="padding-top:0">
+<div class="wrap">
+  <div class="carousel-wrap reveal">
+    <div class="carousel" id="carousel">
+
+      <div class="pcard">
+        <div class="sht">GRADUATION PROJECT <span>2024</span></div>
+        <h3>Self-Driving Mobile Robot for Printing</h3>
+        <p>STM32-based PID motor and encoder control, UART-linked to an NVIDIA Jetson TX2.</p>
+        <p class="more">Extended Kalman Filter fuses Velodyne VLP-16 LiDAR data for localization and mapping — the system that carried my graduation project on self-driving printing and traceability.</p>
+        <button class="readmore" data-more>Read more</button>
+        <div class="tags"><span class="tag">STM32</span><span class="tag">PID</span><span class="tag">EKF</span><span class="tag">LiDAR</span></div>
+      </div>
+
+      <div class="pcard">
+        <div class="sht">AUTOMOTIVE <span>2024–25</span></div>
+        <h3>ROS → Adaptive AUTOSAR</h3>
+        <p>ADAS-oriented architecture built at Synopsys using Execution and State Management.</p>
+        <p class="more">Service-oriented Communication Management over SOME/IP, with CommonAPI and Franca IDL interfaces connecting the software components.</p>
+        <button class="readmore" data-more>Read more</button>
+        <div class="tags"><span class="tag">Adaptive AUTOSAR</span><span class="tag">SOME/IP</span></div>
+      </div>
+
+      <div class="pcard">
+        <div class="sht">COMPUTER VISION <span>2024</span></div>
+        <h3>ID Card Extraction: YOLO + OCR</h3>
+        <p>A detection pipeline for locating ID-card fields with YOLO.</p>
+        <p class="more">Paired with Arabic OCR to extract and structure the recognized text, evaluated across multiple YOLO model variants for accuracy.</p>
+        <button class="readmore" data-more>Read more</button>
+        <div class="tags"><span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">OCR</span></div>
+        <a class="gh" href="https://github.com/mahmoud-kafafy/Egyptian-National-ID-Information-Extraction-YOLO-Model-Evaluation-and-OCR" target="_blank">View on GitHub ↗</a>
+      </div>
+
+      <div class="pcard">
+        <div class="sht">MACHINE LEARNING <span>2024</span></div>
+        <h3>Predictive Maintenance</h3>
+        <p>An industrial sensor-data pipeline for predicting machine failure ahead of time.</p>
+        <p class="more">Compared multiple ML models — including Random Forest with PCA-based dimensionality reduction — on real-world sensor data.</p>
+        <button class="readmore" data-more>Read more</button>
+        <div class="tags"><span class="tag">Scikit-learn</span><span class="tag">Random Forest</span></div>
+        <a class="gh" href="https://github.com/mahmoud-kafafy/Predictive-Maintenance-Using-Real-World-Sensor-Data-with-Multiple-Machine-Learning-Models" target="_blank">View on GitHub ↗</a>
+      </div>
+
+      <div class="pcard">
+        <div class="sht">MODERN C++ <span>2024</span></div>
+        <h3>Airline Reservation System</h3>
+        <p>A console-based airline management system built with OOP principles.</p>
+        <p class="more">Handles flight scheduling, booking, seat selection, crew assignment and maintenance tracking, backed by JSON persistence and authentication.</p>
+        <button class="readmore" data-more>Read more</button>
+        <div class="tags"><span class="tag">Modern C++</span><span class="tag">JSON</span></div>
+        <a class="gh" href="https://github.com/mahmoud-kafafy/Airline_Reservation_and_Management_System_Modern_CPP_Project" target="_blank">View on GitHub ↗</a>
+      </div>
+
+      <div class="pcard">
+        <div class="sht">ROS / SENSORS <span>2023</span></div>
+        <h3>MPU9250 ROS Driver</h3>
+        <p>A ROS driver for the MPU9250 IMU running on an Arduino Uno.</p>
+        <p class="more">Publishes orientation and motion data into a ROS pipeline for use in downstream localization and control nodes.</p>
+        <button class="readmore" data-more>Read more</button>
+        <div class="tags"><span class="tag">ROS</span><span class="tag">Arduino</span></div>
+        <a class="gh" href="https://github.com/mahmoud-kafafy/mpu9250_ros_driver_for_arduino_uno" target="_blank">View on GitHub ↗</a>
+      </div>
+
+      <div class="pcard">
+        <div class="sht">EMBEDDED · AVR <span>2022–23</span></div>
+        <h3>ATmega32 Systems</h3>
+        <p>A set of embedded systems built on the ATmega32.</p>
+        <p class="more">Includes a stopwatch, a temperature-driven fan speed controller, a distance-measuring system, and a keypad-and-EEPROM door locker security system with UART and I²C peripherals.</p>
+        <button class="readmore" data-more>Read more</button>
+        <div class="tags"><span class="tag">Embedded C</span><span class="tag">ATmega32</span></div>
+      </div>
+
+    </div>
+    <div class="carousel-nav">
+      <button class="cnav-btn" id="prevBtn" aria-label="Previous">←</button>
+      <button class="cnav-btn" id="nextBtn" aria-label="Next">→</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="wrap">
+  <div class="head reveal"><div class="tag">Skills</div><h2>What I work with.</h2></div>
+  <div class="skillgrid reveal">
+
+    <div class="skillcell">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="6" width="12" height="12" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div>
+      <div><h3>Embedded & Automotive</h3><p>Adaptive AUTOSAR · STM32 · ATmega32 · Cortex-M4 · RTOS / OSEK OS · UART · SPI · I²C · CAN · LIN · SOME/IP</p></div>
+    </div>
+
+    <div class="skillcell">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3 3 8l5 5M16 3l5 5-5 5"/><path d="M13 3 9 21"/></svg></div>
+      <div><h3>Software & AI</h3><p>Modern C++ (11/14/17) · Python · ROS · Machine Learning · Computer Vision · Linux · Git</p></div>
+    </div>
+
+    <div class="skillcell">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19h16M4 15l4-4 3 3 5-6 4 4"/></svg></div>
+      <div><h3>Tools & CAD</h3><p>MATLAB / Simulink · EAGLE PCB · LTspice · SolidWorks · Autodesk Inventor · Keil · IAR · Eclipse</p></div>
+    </div>
+
+    <div class="skillcell">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 5.7 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.7-4-9s1.5-6.4 4-9z"/></svg></div>
+      <div><h3>Languages</h3><p>Arabic — native · English — fluent (IELTS 6.5) · German — A1</p></div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<section id="contact" class="blueprint">
+<div class="wrap">
+  <div class="stamp reveal">
+    <div>
+      <h2>Let's build something intelligent.</h2>
+      <p>Open to internships and working-student roles in AI, automation and data-driven industrial applications. Outside of engineering I'm usually still tinkering — with a controller in hand or a new dataset open in the other tab.</p>
+      <div class="social">
+        <a href="mailto:Mahmoudkafafy74@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        <a href="https://github.com/mahmoud-kafafy" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a>
+        <a href="https://www.linkedin.com/in/mahmoud-kafafy-9b5a4b196/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.1 3.77-2.1 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z"/></svg></a>
+      </div>
+    </div>
+    <div class="contactlist">
+      <div><span class="l">EMAIL</span><a href="mailto:Mahmoudkafafy74@gmail.com">Mahmoudkafafy74@gmail.com</a></div>
+      <div><span class="l">PHONE</span><a href="tel:+491639765275">+49 163 976 5275</a></div>
+      <div><span class="l">LOCATION</span>Cham, Bavaria, Germany</div>
+    </div>
+  </div>
+</div>
+</section>
+
 </main>
-<footer><div class="wrap">© 2026 Mahmoud Kafafy · Built for engineering, not just decoration.</div></footer>
+
+<footer class="blueprint"><div class="wrap">
+  <span>© 2026 Mahmoud Kafafy</span>
+  <span>Mechatronics Engineering · Applied AI</span>
+</div></footer>
 
 <script>
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
-document.querySelectorAll('.card').forEach(c=>c.addEventListener('pointermove',e=>{let r=c.getBoundingClientRect();c.style.setProperty('--x',(e.clientX-r.left)+'px');c.style.setProperty('--y',(e.clientY-r.top)+'px')}));
+// ---- typing effect ----
+const roles = ["Mechatronics Engineer.","Embedded Systems Developer.","Automotive Software Engineer.","Applied AI Student."];
+const typedEl = document.getElementById('typed');
+let ri=0, ci=0, deleting=false;
+function typeTick(){
+  const word = roles[ri];
+  if(!deleting){
+    ci++;
+    typedEl.textContent = word.slice(0,ci);
+    if(ci===word.length){ deleting=true; setTimeout(typeTick,1500); return; }
+  } else {
+    ci--;
+    typedEl.textContent = word.slice(0,ci);
+    if(ci===0){ deleting=false; ri=(ri+1)%roles.length; }
+  }
+  setTimeout(typeTick, deleting?35:65);
+}
+typeTick();
+
+// ---- accordion Explore panels ----
+document.querySelectorAll('[data-toggle]').forEach(head=>{
+  head.addEventListener('click', ()=>{
+    const item = head.closest('.explore-item');
+    const body = item.querySelector('.exp-body');
+    const isOpen = item.classList.contains('open');
+    // close siblings within the same list
+    item.parentElement.querySelectorAll('.explore-item.open').forEach(other=>{
+      if(other!==item){ other.classList.remove('open'); other.querySelector('.exp-body').style.maxHeight=null; }
+    });
+    if(isOpen){ item.classList.remove('open'); body.style.maxHeight=null; }
+    else{ item.classList.add('open'); body.style.maxHeight = body.scrollHeight+'px'; }
+  });
+});
+
+// ---- project card read more ----
+document.querySelectorAll('[data-more]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const card = btn.closest('.pcard');
+    card.classList.toggle('open');
+    btn.textContent = card.classList.contains('open') ? 'Show less' : 'Read more';
+  });
+});
+
+// ---- carousel arrows ----
+const carousel = document.getElementById('carousel');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+function scrollAmt(){ return carousel.querySelector('.pcard').offsetWidth + 18; }
+prevBtn.addEventListener('click', ()=>carousel.scrollBy({left:-scrollAmt(),behavior:'smooth'}));
+nextBtn.addEventListener('click', ()=>carousel.scrollBy({left:scrollAmt(),behavior:'smooth'}));
+function updateNav(){
+  prevBtn.disabled = carousel.scrollLeft < 10;
+  nextBtn.disabled = carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 10;
+}
+carousel.addEventListener('scroll', updateNav);
+updateNav();
+
+// ---- scroll reveal ----
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+},{threshold:.15, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// ---- nav active section ----
+const navLinks = document.querySelectorAll('.navlinks a[href^="#"]');
+const sections = ['work','experience','skills','contact'].map(id=>document.getElementById(id));
+const navIO = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){ navLinks.forEach(l=>l.classList.toggle('active', l.getAttribute('href')==='#'+entry.target.id)); }
+  });
+},{rootMargin:'-40% 0px -50% 0px'});
+sections.forEach(s=>{ if(s) navIO.observe(s); });
 </script>
+
 </body>
 </html>
